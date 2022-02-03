@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px  #a3a3a3;
+    border-radius: none;
+}
+
+
+/* HEADERS STYLING */
+
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-family:'Harlow Solid' ;
+    font-weight: 700;
+    font-size: 3.25em;
+}
+
+.input-task-holder {
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    padding: 2.5%
+}
+
+input[type="text"]{
+    width: 75%;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 2.5%;
+    border: none;
+    box-shadow: 0px 1px 5px #a3a3a3;
+}
+#add-btn {
+    width: 50px;
+    margin: 2.5%;
+    border-radius: 30px;
+    border: none;
+    color:white;
+    background-color:darkturquoise ;
+}
+
+.pop{
+    font-size: 25px;
+}
+
+
+/* TASK LIST STYLING */
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cecece;
+    border-radius: 10px;
+    
+}
+
+
+/* styling for single text */
+/* #task {
+    width: 100%;
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cecece;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 1.35em;
+    
+} */
+.task span {
+    font-size: 1.35em;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* #check:checked ~ .text {
+    text-decoration: line-through;
+    color: #a3a3a3;
+}
+
+#check:checked ~ .circle .fa-circle {
+    color: chartreuse;
+} */
+
+
+.fa, 
+.far {
+    font-size: 25px;
+}
+.fa-circle {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.fa-check-circle {
+    color: chartreuse;
+}
+
+.fa-trash{
+    margin-left: auto;
+    cursor: pointer;
+}
+.bin {
+    margin-left: auto;
+    cursor: pointer;
+    width: 25px;
+}
+
+.circle {
+    margin-right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.bin-img {
+    width: 100%;
+    /* margin-left: auto; */
+    cursor: pointer;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+
+
+@media (min-width: 510px) {
+    .container {
+        width: 400px;
+        min-height: 90vh;
+        border-radius: 20px;
+    }
+
+}
